@@ -37,6 +37,7 @@ Vagrant.configure("2") do |config|
     curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
     source ~/.bash_profile
     nvm install 16.12.0
+    setenforce 0
 
     groupadd -f -r podman
 
